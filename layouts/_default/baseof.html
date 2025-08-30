@@ -60,9 +60,6 @@
                         {{ (strings.FirstUpper (or .Site.Params.themes.event.shortTitle .Site.Params.themes.event.title)) }}
                     </a>
 
-                    {{- partial "elements/language-switcher.html" . }}
-                    </a>
-
                     <div class="page-header__menu-container">
                         <div id="pageHeaderMenuScriptValidator" style="display: none;">
                             <script>
@@ -78,6 +75,27 @@
                             }}
                         </div>
                     </div>
+
+                    {{ if gt (len .Site.Languages) 1 }}
+                        <!-- Label for assistive technologies only -->
+                        <label for="language-select" class="sr-only">{{ T "language_menu.label" }}</label>
+                        <select
+                            id="language-select"
+                            class="select"
+                            name="language"
+                            onchange="location = this.value;"
+                            data-testid="language-select">
+                            {{ range $.Site.Home.AllTranslations }}
+                                <option
+                                    value="{{ .RelPermalink }}"
+                                    {{ if eq .Language $.Language }}
+                                        selected
+                                    {{ end }}>
+                                    {{ or .Language.LanguageName .Language.Lang | upper }}
+                                </option>
+                            {{ end }}
+                        </select>
+                    {{ end }}
 
                     {{- partial "cta/button.html" (
                         dict
@@ -221,11 +239,6 @@
 
 
                 <div class="page-footer-section__end">
-                    {{- partial "elements/made-by-medialesson.html" (
-                        dict
-                        "linkClass" "page-footer-section__made-by-link"
-                        )
-                    }}
                 </div>
             </section>
         </footer>
