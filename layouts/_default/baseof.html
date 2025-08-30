@@ -76,33 +76,35 @@
                         </div>
                     </div>
 
-                    {{ if gt (len .Site.Languages) 1 }}
-                        <!-- Label for assistive technologies only -->
-                        <label for="language-select" class="sr-only">{{ T "language_menu.label" }}</label>
-                        <select
-                            id="language-select"
-                            class="select"
-                            name="language"
-                            onchange="location = this.value;"
-                            data-testid="language-select">
-                            {{ range $.Site.Home.AllTranslations }}
-                                <option
-                                    value="{{ .RelPermalink }}"
-                                    {{ if eq .Language $.Language }}
-                                        selected
-                                    {{ end }}>
-                                    {{ or .Language.LanguageName .Language.Lang | upper }}
-                                </option>
-                            {{ end }}
-                        </select>
-                    {{ end }}
+                    <div class="page-header__actions-container" style="width: 30%; min-width: 200px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        {{ if gt (len .Site.Languages) 1 }}
+                            <!-- Label for assistive technologies only -->
+                            <label for="language-select" class="sr-only">{{ T "language_menu.label" }}</label>
+                            <select
+                                id="language-select"
+                                class="select"
+                                name="language"
+                                onchange="location = this.value;"
+                                data-testid="language-select">
+                                {{ range $.Site.Home.AllTranslations }}
+                                    <option
+                                        value="{{ .RelPermalink }}"
+                                        {{ if eq .Language $.Language }}
+                                            selected
+                                        {{ end }}>
+                                        {{ or .Language.LanguageName .Language.Lang | upper }}
+                                    </option>
+                                {{ end }}
+                            </select>
+                        {{ end }}
 
-                    {{- partial "cta/button.html" (
-                        dict
-                        "eventbriteId" .Site.Params.themes.event.callToAction.eventbrite.eventId
-                        "ctaUrl" .Site.Params.themes.event.callToAction.other.url
-                        )
-                    }}
+                        {{- partial "cta/button.html" (
+                            dict
+                            "eventbriteId" .Site.Params.themes.event.callToAction.eventbrite.eventId
+                            "ctaUrl" .Site.Params.themes.event.callToAction.other.url
+                            )
+                        }}
+                    </div>
                 </nav>
             </div>
         </header>
