@@ -57,3 +57,10 @@ params:
     event:
       startDate: '2025-09-13T10:00:00+08:00'
       endDate: '2025-09-13T18:00:00+08:00'
+      images:
+        logo: logos/cot.jpg
+        titleBackground: images/pexels-scottwebb-1048039.webp
+      location:
+      callToAction:
+        other:
+            url: https://buytickets.at/opentechconf/1814423
