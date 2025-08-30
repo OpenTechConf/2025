@@ -3,6 +3,11 @@ defaultContentLanguage: 'zh-hant'
 defaultContentLanguageInSubdir: true
 theme: 'event'
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 languages:
   zh-hant:
     languageName: '繁體中文'
