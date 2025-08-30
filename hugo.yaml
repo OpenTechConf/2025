@@ -14,6 +14,12 @@ languages:
     weight: 1
     contentDir: 'content'
     languageCode: 'zh-hant'
+    menu:
+      main:
+        - identifier: 'location'
+          name: '地點'
+          url: '/zh-hant/location/'
+          weight: 40
     params:
       locale: 'zh-Hant'
       themes:
@@ -38,6 +44,12 @@ languages:
     weight: 2
     contentDir: 'content'
     languageCode: 'en'
+    menu:
+      main:
+        - identifier: 'location'
+          name: 'Location'
+          url: '/en/location/'
+          weight: 40
     params:
       locale: 'en'
       themes:
