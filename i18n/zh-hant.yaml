@@ -1,0 +1,60 @@
+countdown.days: 天
+countdown.hours: 小時
+countdown.minutes: 分鐘
+countdown.seconds: 秒
+cta_banner.message: 立即購票！
+cta_button.get_ticket: 立即報名！
+cta_section.heading: 有發現什麼有趣的嗎？
+cta_section.subheading: 今天就報名！
+cta_section.message: |
+    不要錯過向頂尖專家學習和建立寶貴人脈的機會！
+header_featured_speakers: 精選講者
+speakers_page.heading: 講者
+speakers_page.social_links: '{{ . }} 的社群連結'
+sessions_page.heading: 議程
+sessions_page.day: 第 {{ . }} 天
+sessions_page.heading_day_filter: 日期
+sessions_page.heading_track_filter: 軌
+sessions_page.speaker: 講者
+sessions_page.room: 場地
+sessions_page.read_more: 閱讀更多
+sessions_page.heading_no_sessions: 尚未安排議程
+sessions_page.heading_come_back_soon: 請稍後再回來或追蹤我們的社群
+menu.code_of_conduct: 行為守則
+menu.about: 關於我們
+menu.sessions: 議程
+menu.speakers: 講者
+menu.location: 地點
+menu.sponsors: 贊助夥伴
+main_menu.label: 主選單
+social-links_list.label: 社群連結
+secondary_menu.label: 次選單
+language_menu.label: 選擇語言
+location_page.heading: 活動地點
+location_page.directions_heading: 路線
+location_page.map_frame: 顯示活動地點的互動地圖
+location_page.map_fullscreen: 檢視更大的活動地圖
+sponsors_page.heading_sponsors: 贊助商
+sponsors_page.heading_partners: 合作夥伴
+about_page.heading: 關於我們
+about_page.organizers_heading: '{{ . }} 的主辦團隊'
+conference_tracks_section.heading: 主題軌
+conference_tracks_section.subheading: 探索我們的主題
+conference_tracks_section.action: 開啟議程
+featured_speakers_section.heading: 精選講者
+featured_speakers_section.subheading: 認識專家
+featured_speakers_section.action: 所有講者一覽
+featured_sessions_section.heading: 精選議程
+featured_sessions_section.read_more: 閱讀更多
+featured_sessions_section.action: 所有議程
+sponsors_section.heading: 我們的贊助商
+sponsors_section.subheading: 感謝所有支持者！
+event_highlights_section.number_of_speakers:
+    one: '{{ . }} 位講者'
+    other: '{{ . }} 位講者'
+event_highlights_section.number_of_sessions:
+    one: '{{ . }} 場議程'
+    other: '{{ . }} 場議程'
+event_highlights_section.number_of_days:
+    one: '{{ . }} 天'
+    other: '{{ . }} 天'

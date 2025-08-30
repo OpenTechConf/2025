@@ -1,0 +1,19 @@
+<nav class="language-switcher" aria-label="{{ i18n "language_menu.label" }}">
+  <ul>
+    {{ range .Site.Languages }}
+      {{ if ne .Lang $.Site.Language.Lang }}
+        <li>
+          {{ $target := false }}
+          {{ range $.Translations }}
+            {{ if eq .Lang $.Lang }}
+              {{ $target = .RelPermalink }}
+            {{ end }}
+          {{ end }}
+          <a href="{{ if $target }}{{ $target }}{{ else }}{{ with (where $.Sites "Language.Lang" .Lang) }}{{ (index . 0).Home.RelPermalink }}{{ end }}{{ end }}" lang="{{ .Lang }}">
+            {{ .LanguageName }}
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</nav>
