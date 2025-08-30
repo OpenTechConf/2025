@@ -12,8 +12,19 @@ theme = 'event'
 		languageCode = 'zh-hant'
 		params.locale = 'zh-Hant'
 		[languages.zh-hant.params.themes.event]
-			title = 'OpenTechConf'
 			location = 'AWS 香港辦公室'
+			slogan = 'OpenTechConf 會議'
+			description = '''
+OpenTechConf 是一個專注於開放技術的會議。
+我們希望您享受使用這個主題！🎉
+'''
+			directions = '''
+使用公共交通到達會場的路線指南。
+您可以在 Hugo 配置文件中自訂此佔位文字，或如果不需要則移除它。
+'''
+			aboutUs = '''
+更多關於活動的資訊將很快添加。敬請期待！🎉
+'''
 	[languages.en]
 		languageName = 'English'
 		weight = 2
@@ -22,8 +33,19 @@ theme = 'event'
 		languageCode = 'en'
 		params.locale = 'en'
 		[languages.en.params.themes.event]
-			title = 'OpenTechConf'
 			location = 'AWS Office, Hong Kong'
+			slogan = 'A Conference for Open Technology'
+			description = '''
+OpenTechConf is a conference focused on open technology.
+We hope you enjoy using this theme! 🎉
+'''
+			directions = '''
+Directions for getting to the location using public transportation.
+Customize this placeholder text in your Hugo configuration file or remove it if not needed.
+'''
+			aboutUs = '''
+More information about the event will be added soon. Stay tuned! 🎉
+'''
 
 [params.themes.event]
     startDate = '2025-09-13T10:00:00+08:00'
