@@ -8,10 +8,10 @@ theme = 'event'
 		languageName = '繁體中文'
 		weight = 1
 		contentDir = 'content'
-	    title = 'OpenTechConf'
 		languageCode = 'zh-hant'
 		params.locale = 'zh-Hant'
 		[languages.zh-hant.params.themes.event]
+		    title = 'OpenTechConf'
 			location = 'AWS 香港辦公室'
 			slogan = 'OpenTechConf 會議'
 			description = '''
@@ -25,14 +25,18 @@ OpenTechConf 是一個專注於開放技術的會議。
 			aboutUs = '''
 更多關於活動的資訊將很快添加。敬請期待！🎉
 '''
+			[languages.zh-hant.params.themes.event.map]
+				embeddableMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5220.598370571007!2d114.18136491208845!3d22.281210279615788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404019b30d1286b%3A0x435f07b1a333608e!2sAWS%20Hong%20Kong!5e1!3m2!1sen!2sus!4v1756544296072!5m2!1sen!2sus&hl=zh-HK'
+				viewLargerMapUrl = 'https://www.google.com/maps/place/AWS+Hong+Kong/'
+
 	[languages.en]
 		languageName = 'English'
 		weight = 2
 		contentDir = 'content'
-	    title = 'OpenTechConf'
 		languageCode = 'en'
 		params.locale = 'en'
 		[languages.en.params.themes.event]
+		    title = 'OpenTechConf'
 			location = 'AWS Office, Hong Kong'
 			slogan = 'A Conference for Open Technology'
 			description = '''
@@ -46,6 +50,9 @@ Customize this placeholder text in your Hugo configuration file or remove it if 
 			aboutUs = '''
 More information about the event will be added soon. Stay tuned! 🎉
 '''
+			[languages.en.params.themes.event.map]
+				embeddableMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5220.598370571007!2d114.18136491208845!3d22.281210279615788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404019b30d1286b%3A0x435f07b1a333608e!2sAWS%20Hong%20Kong!5e1!3m2!1sen!2sus!4v1756543326792!5m2!1sen!2sus'
+				viewLargerMapUrl = 'https://www.google.com/maps/place/AWS+Hong+Kong/'
 
 [params.themes.event]
     startDate = '2025-09-13T10:00:00+08:00'
