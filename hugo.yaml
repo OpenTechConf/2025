@@ -27,6 +27,7 @@ languages:
           title: 'OpenTechConf'
           slogan: 'OpenTechConf 會議'
           location: 'AWS 香港辦公室'
+          location_full: 'Tower 535 二十樓全層 (AWS 香港辦公室)'
           address:
             - 銅鑼灣謝斐道 535 號
             - Tower 535 二十樓全層
@@ -57,6 +58,7 @@ languages:
         event:
           title: 'OpenTechConf'
           location: 'AWS Office, Hong Kong'
+          location_full: '20/F, Tower 535, Causeway Bay (AWS Office, Hong Kong)'
           slogan: 'A Conference for Open Technology'
           address:
             - 20/F, Tower 535,
